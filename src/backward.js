@@ -6,8 +6,8 @@ module.exports = {
         if (array.length == 1) return array;
 
         for (let m = 0; m < number_to_move; m++) {
-            let shifted_number = array.shift();
-            array.push(shifted_number);
+            let poped_number = array.pop();
+            array.unshift(poped_number);
         }
         return array
 
